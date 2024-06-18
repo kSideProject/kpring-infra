@@ -2,7 +2,7 @@
 service:
   name: auth-application
   image: youdong98/kpring-auth-application
-  tag: 3729a340
+  tag: 462cfbe3
   port: 8080
   nodePort: 30001
   jwt:
