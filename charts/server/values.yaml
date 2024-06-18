@@ -2,13 +2,11 @@
 service:
   name: server-application
   image: youdong98/kpring-server-application
-  tag: latest
+  tag: 3729a340
   port: 8080
   nodePort: 30003
-
 api:
   authServiceUrl: http://auth-application
-
 mongo:
   name: server-mongo
   image: mongo:latest

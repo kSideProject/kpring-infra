@@ -2,13 +2,11 @@
 service:
   name: user-application
   image: youdong98/kpring-user-application
-  tag: latest
+  tag: 3729a340
   port: 8080
   nodePort: 30002
-
 api:
   authServiceUrl: http://auth-application
-
 mysql:
   name: user-mysql
   image: mysql:8.0
