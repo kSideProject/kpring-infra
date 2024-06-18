@@ -1,7 +1,8 @@
 # auth service
 service:
   name: auth-application
-  image: youdong98/kpring-auth-application:latest
+  image: youdong98/kpring-auth-application
+  tag: latest
   port: 8080
   nodePort: 30001
   jwt:
