@@ -6,7 +6,7 @@ ingress:
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
   hosts:
-    - host:
+    - host: kpring.duckdns.org
       paths:
         - path: /auth(/|$)(.*)
           pathType: ImplementationSpecific

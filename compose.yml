@@ -11,3 +11,4 @@ services:
       - "8080:8080"
     environment:
       URLS: "[{name: 'auth', url: 'http://kpring.duckdns.org/auth/static/openapi3.yaml'},{name: 'user', url: 'http://kpring.duckdns.org/user/static/openapi3.yaml'}, {name: 'server', url: 'http://kpring.duckdns.org/server/static/openapi3.yaml'}]"
+      BASE_URL: "/swagger"
