@@ -1,4 +1,18 @@
+# introduce
+[kpring]() 프로젝트의 소스를 배포하기 위한 kubernetes 리소스를 관리 저장소입니다.
+[kpring.duckdns.org](http://kpring.duckdns.org) 도메인을 통해서 서비스를 배포하고 운영하고 있습니다.
+
+## Our services
+
+다음과 같은 서비스를 현재 운영 중입니다. api server의 스펙은 swagger ui를 통해서 제공하는 api 문서를 참고해주세요.
+- argocd ui : [kpring.duckdns.org/argocd](http://kpring.duckdns.org/argocd) 
+- swagger ui : [kpring.duckdns.org/swagger](http://kpring.duckdns.org/swagger)
+- auth api server : [kpring.duckdns.org/auth](http://kpring.duckdns.org/auth)
+- user api server : [kpring.duckdns.org/user](http://kpring.duckdns.org/user)
+- server api server : [kpring.duckdns.org/server](http://kpring.duckdns.org/server)
+
 # Local kubernetes cluster에서 MSA 구동하기
+로컬 상에서 kubernetes cluster를 구동하고 MSA를 구동하는 방법을 소개합니다.
 
 ## Summary
 kubernetes on local 가이드 문서를 참고하여 환경을 구성하였다면 시작할 준비가 되었습니다.
@@ -12,6 +26,7 @@ kubernetes on local 가이드 문서를 참고하여 환경을 구성하였다�
 gradle의 'jib' 테스크를 실행하여 개발한 서비스의 이미지를 개인 이미지 저장소에 등록해주세요.
 
 ```shell
+./gradlew openapi3
 ./gradlew jib
 ```
 
