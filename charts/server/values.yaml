@@ -1,7 +1,7 @@
 # server service
 service:
   name: server-application
-  image: youdong98/kpring-server-application
+  image: kpring/server-application
   tag: 462cfbe3
   port: 8080
   nodePort: 30003
