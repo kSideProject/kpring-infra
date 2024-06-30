@@ -13,7 +13,7 @@ spec:
         app: {{ .Values.name }}
     spec:
       containers:
-        - name: {{ .Values.Name }}
+        - name: {{ .Values.name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default "latest" }}"
           ports:
             - name: http
