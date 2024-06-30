@@ -9,6 +9,7 @@ container:
 image:
   repository: kpring/front_app
   tag: "latest"
+  pullSecrets: regcred
 
 nodeSelector: {}
 
