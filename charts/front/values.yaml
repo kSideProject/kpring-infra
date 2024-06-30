@@ -1,0 +1,17 @@
+name: kpring-front-application
+
+service:
+  port: 80
+
+container:
+  port: 80
+
+image:
+  repository: kpring/front_app
+  tag: "latest"
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
