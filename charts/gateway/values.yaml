@@ -16,9 +16,6 @@ ingress:
         - path: /server(/|$)(.*)
           pathType: ImplementationSpecific
           service: server-application
-        - path: /(.*)
-          pathType: ImplementationSpecific
-          service: kpring-front-application
   tls: []
 
 default:
