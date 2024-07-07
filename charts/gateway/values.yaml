@@ -1,6 +1,5 @@
 ingress:
   name: kpring-ingress
-  enabled: false
   className: "nginx"
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
@@ -17,6 +16,23 @@ ingress:
         - path: /server(/|$)(.*)
           pathType: ImplementationSpecific
           service: server-application
+        - path: /(.*)
+          pathType: ImplementationSpecific
+          service: kpring-front-application
   tls: []
+
+default:
+  name: default-ingress
+  className: "nginx"
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  hosts:
+    - host: kpring.duckdns.org
+      paths:
+        - path: /
+          pathType: Prefix
+          service: kpring-front-application
+  tls: []
+
 
 resources: {}
