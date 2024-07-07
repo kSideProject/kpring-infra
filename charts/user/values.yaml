@@ -1,8 +1,8 @@
 # user service
 service:
   name: user-application
-  image: youdong98/kpring-user-application
-  tag: 462cfbe3
+  image: kpring/user-application
+  tag: 4f73c170
   port: 8080
   nodePort: 30002
 api:
