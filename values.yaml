@@ -5,3 +5,8 @@ global:
     auth: true
     user: true
     server: true
+
+# core module configurations
+  core:
+    url:
+      server: http://server-application
