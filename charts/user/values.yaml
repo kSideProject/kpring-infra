@@ -2,7 +2,7 @@
 service:
   name: user-application
   image: kpring/user-application
-  tag: a8939967
+  tag: 7f0bb1d8
   port: 8080
   nodePort: 30002
 api:
