@@ -2,7 +2,7 @@
 service:
   name: server-application
   image: kpring/server-application
-  tag: 4758f125
+  tag: 1f382ac2
   port: 8080
   nodePort: 30003
 api:
